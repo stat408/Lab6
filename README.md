@@ -1,15 +1,30 @@
-# Lab6
-
-Turn in one copy for each group. If group members are not present in class they will be required to complete their own lab to receive credit. Please turn in **both a DOC or PDF file and your R Markdown script**. 
+Lab 6
 
 ## Lab Overview
-This lab is extremly open ended. You are should create at least two informative figures using the OkCupid dataset (at least one of which needs to be created using `ggplot2`). Note OkCupid dataset in an anonymized version of dating profiles for OkCupid members in the San Francisco area.
-
-This may require some data manipulation / wrangling to create variables and in turn interesting figures.
 
 
-```
-library(readr)
-okcupid <- read_csv("http://www.math.montana.edu/ahoegh/teaching/stat408/datasets/OKCupid_profiles_clean.csv")
-```
+The entire lab will be worth 20 points. 
+
+## Questions
+Answer the following questions in this R Markdown document. Please include code where necessary.
+
+### 1. Capital BikeShare Data
+This data set contains single bike trips from March of 2017 for the Capital BikeShare system in Washington, D.C.
+
+### a. (3 points)
+Download the file [http://math.montana.edu/ahoegh/teaching/stat408/datasets/biketrips2017.csv](http://math.montana.edu/ahoegh/teaching/stat408/datasets/biketrips2017.csv) and summarize the data set. What does each column represent? What about each row? 
+
+### b. (5 points)
+Compute how many trips were made for each of the 31 days in the month of March. I have filtered out cases that started and ended on different days. Note this will require an intermediate step to extract the day of the month.
+
+### c. (3 points)
+Create a new variable that contains the trip time.
+
+### d. (3 points)
+What percentage of bike rentals last more than an hour?
+
+### e. (6 points)
+
+Create a figure to plot the trip time as a function of day of week (Sunday, Monday, etc...). Make sure to include an informative title and sort the weekday into chronological ordering.
+
 
